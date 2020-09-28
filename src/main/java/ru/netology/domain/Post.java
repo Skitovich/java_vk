@@ -14,6 +14,18 @@ public class Post {
     private boolean canPin;
     private boolean canDelete;
     private boolean canEdit;
+    private boolean isPined;
+    private String copyright;
+    private boolean friendsOnly;
+    private String markedAsAdd;
+
+    public boolean isPined() {
+        return isPined;
+    }
+
+    public void setPined(boolean pined) {
+        isPined = pined;
+    }
 
     public int getId() {
         return Id;
