@@ -19,6 +19,30 @@ public class Post {
     private boolean friendsOnly;
     private String markedAsAdd;
 
+    public String getCopyright() {
+        return copyright;
+    }
+
+    public void setCopyright(String copyright) {
+        this.copyright = copyright;
+    }
+
+    public boolean isFriendsOnly() {
+        return friendsOnly;
+    }
+
+    public void setFriendsOnly(boolean friendsOnly) {
+        this.friendsOnly = friendsOnly;
+    }
+
+    public String getMarkedAsAdd() {
+        return markedAsAdd;
+    }
+
+    public void setMarkedAsAdd(String markedAsAdd) {
+        this.markedAsAdd = markedAsAdd;
+    }
+
     public boolean isPined() {
         return isPined;
     }
@@ -130,10 +154,6 @@ public class Post {
     public void setCanEdit(boolean canEdit) {
         this.canEdit = canEdit;
     }
-
-
-
-
 
 
 }
