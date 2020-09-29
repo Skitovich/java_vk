@@ -22,6 +22,15 @@ public class Post {
     private String ownerName;
     private String commentatorInfo;
     private String replyInfo;
+    private int commentLikeInfo;
+
+    public int getCommentLikeInfo() {
+        return commentLikeInfo;
+    }
+
+    public void setCommentLikeInfo(int commentLikeInfo) {
+        this.commentLikeInfo = commentLikeInfo;
+    }
 
     public int getLikeInfo() {
         return likeInfo;
