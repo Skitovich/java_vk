@@ -1,10 +1,9 @@
 package ru.netology.domain;
 
 public class Post {
-    private int Id;
+    private int id;
     private boolean commentsInfo;
     private String ownerPost;
-    private int viewInfo;
     private int countLike;
     private int repostInfo;
     private int date;
@@ -18,6 +17,51 @@ public class Post {
     private String copyright;
     private boolean friendsOnly;
     private String markedAsAdd;
+    private int likeInfo;
+    private String ownerAvatar;
+    private String ownerName;
+    private String commentatorInfo;
+    private String replyInfo;
+
+    public int getLikeInfo() {
+        return likeInfo;
+    }
+
+    public void setLikeInfo(int likeInfo) {
+        this.likeInfo = likeInfo;
+    }
+
+    public String getOwnerAvatar() {
+        return ownerAvatar;
+    }
+
+    public void setOwnerAvatar(String ownerAvatar) {
+        this.ownerAvatar = ownerAvatar;
+    }
+
+    public String getOwnerName() {
+        return ownerName;
+    }
+
+    public void setOwnerName(String ownerName) {
+        this.ownerName = ownerName;
+    }
+
+    public String getCommentatorInfo() {
+        return commentatorInfo;
+    }
+
+    public void setCommentatorInfo(String commentatorInfo) {
+        this.commentatorInfo = commentatorInfo;
+    }
+
+    public String getReplyInfo() {
+        return replyInfo;
+    }
+
+    public void setReplyInfo(String replyInfo) {
+        this.replyInfo = replyInfo;
+    }
 
     public String getCopyright() {
         return copyright;
@@ -51,12 +95,13 @@ public class Post {
         isPined = pined;
     }
 
+
     public int getId() {
-        return Id;
+        return id;
     }
 
     public void setId(int id) {
-        Id = id;
+        this.id = id;
     }
 
     public boolean isCommentsInfo() {
@@ -75,13 +120,6 @@ public class Post {
         this.ownerPost = ownerPost;
     }
 
-    public int getViewInfo() {
-        return viewInfo;
-    }
-
-    public void setViewInfo(int viewInfo) {
-        this.viewInfo = viewInfo;
-    }
 
     public int getCountLike() {
         return countLike;
