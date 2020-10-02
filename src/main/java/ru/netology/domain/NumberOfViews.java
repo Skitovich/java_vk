@@ -4,6 +4,8 @@ public class NumberOfViews {
     private int countViews;
     private boolean visibility;
 
+
+
     public int getCountViews() {
         return countViews;
     }

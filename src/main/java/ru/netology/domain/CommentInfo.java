@@ -1,12 +1,14 @@
 package ru.netology.domain;
 
-public class CommentsInfo {
+public class CommentInfo {
     private boolean canComment;
     private boolean canEdit;
     private int likeInfo;
     private boolean canCloseComments;
     private boolean canOpenComments;
     private boolean userLike;
+    public String CommentLikeInfo;
+    private int commentLikeSummary;
 
     public boolean isCanComment() {
         return canComment;
@@ -54,5 +56,21 @@ public class CommentsInfo {
 
     public void setUserLike(boolean userLike) {
         this.userLike = userLike;
+    }
+
+    public String getCommentLikeInfo() {
+        return CommentLikeInfo;
+    }
+
+    public void setCommentLikeInfo(String commentLikeInfo) {
+        CommentLikeInfo = commentLikeInfo;
+    }
+
+    public int getCommentLikeSummary() {
+        return commentLikeSummary;
+    }
+
+    public void setCommentLikeSummary(int commentLikeSummary) {
+        this.commentLikeSummary = commentLikeSummary;
     }
 }
