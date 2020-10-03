@@ -1,25 +1,22 @@
 package ru.netology.domain;
 
-import java.util.Objects;
-
 public class Post {
     private int id;
-    private boolean commentsInfo;
+    private CommentInfo commentsInfo;
     private String ownerPost;
-    private int countLike;
-    private int repostInfo;
+    private CountLikes countLike;
+    private RepostInfo repostInfo;
     private int date;
     private String text;
     private String image;
-    private boolean postInfo;
+    private PostInfo postInfo;
     private String copyright;
     private String geo;
     private int likeInfo;
     private String ownerAvatar;
     private String ownerName;
-    private String commentatorInfo;
-    private String replyInfo;
-    private int commentLikeInfo;
+    private CommentatorInfo commentatorInfo;
+    private ReplyInfo replyInfo;
     private String postSource;
 
     public int getId() {
@@ -30,11 +27,11 @@ public class Post {
         this.id = id;
     }
 
-    public boolean isCommentsInfo() {
+    public CommentInfo getCommentsInfo() {
         return commentsInfo;
     }
 
-    public void setCommentsInfo(boolean commentsInfo) {
+    public void setCommentsInfo(CommentInfo commentsInfo) {
         this.commentsInfo = commentsInfo;
     }
 
@@ -46,19 +43,19 @@ public class Post {
         this.ownerPost = ownerPost;
     }
 
-    public int getCountLike() {
+    public CountLikes getCountLike() {
         return countLike;
     }
 
-    public void setCountLike(int countLike) {
+    public void setCountLike(CountLikes countLike) {
         this.countLike = countLike;
     }
 
-    public int getRepostInfo() {
+    public RepostInfo getRepostInfo() {
         return repostInfo;
     }
 
-    public void setRepostInfo(int repostInfo) {
+    public void setRepostInfo(RepostInfo repostInfo) {
         this.repostInfo = repostInfo;
     }
 
@@ -86,11 +83,11 @@ public class Post {
         this.image = image;
     }
 
-    public boolean isPostInfo() {
+    public PostInfo getPostInfo() {
         return postInfo;
     }
 
-    public void setPostInfo(boolean postInfo) {
+    public void setPostInfo(PostInfo postInfo) {
         this.postInfo = postInfo;
     }
 
@@ -101,7 +98,6 @@ public class Post {
     public void setCopyright(String copyright) {
         this.copyright = copyright;
     }
-    
 
     public String getGeo() {
         return geo;
@@ -135,28 +131,20 @@ public class Post {
         this.ownerName = ownerName;
     }
 
-    public String getCommentatorInfo() {
+    public CommentatorInfo getCommentatorInfo() {
         return commentatorInfo;
     }
 
-    public void setCommentatorInfo(String commentatorInfo) {
+    public void setCommentatorInfo(CommentatorInfo commentatorInfo) {
         this.commentatorInfo = commentatorInfo;
     }
 
-    public String getReplyInfo() {
+    public ReplyInfo getReplyInfo() {
         return replyInfo;
     }
 
-    public void setReplyInfo(String replyInfo) {
+    public void setReplyInfo(ReplyInfo replyInfo) {
         this.replyInfo = replyInfo;
-    }
-
-    public int getCommentLikeInfo() {
-        return commentLikeInfo;
-    }
-
-    public void setCommentLikeInfo(int commentLikeInfo) {
-        this.commentLikeInfo = commentLikeInfo;
     }
 
     public String getPostSource() {
@@ -166,4 +154,6 @@ public class Post {
     public void setPostSource(String postSource) {
         this.postSource = postSource;
     }
+
+
 }
